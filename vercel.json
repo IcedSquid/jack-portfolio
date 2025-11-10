@@ -1,15 +1,5 @@
 {
-    "builds": [
-      {
-        "src": "jack-portfolio/package.json", 
-        "use": "@vercel/next"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/jack-portfolio/$1"
-      }
-    ],
-  "rootDirectory": "jack-portfolio"
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
 }
