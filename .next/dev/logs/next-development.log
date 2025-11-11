@@ -1,0 +1,2259 @@
+[00:00:00.694] Server  LOG      ✓ Ready in 477ms
+[00:00:18.931] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:07:04.525] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:07:58.111] Server  LOG      ✓ Compiled in 28ms
+[00:13:55.933] Server  LOG      ✓ Compiled in 20ms
+[00:13:57.594] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.595] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.596] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.596] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.596] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.597] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:13:57.742] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:27.302] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.303] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.304] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.305] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.305] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.306] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:27.492] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:28.355] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.355] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.356] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.356] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.356] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.357] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:28.546] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:33.529] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.529] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.530] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.530] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.530] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.531] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.531] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.531] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.532] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.532] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.532] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.532] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:33.707] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:35.084] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.084] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.085] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.086] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.086] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.086] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.086] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.087] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.088] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.088] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.089] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.089] Server  ERROR    ⨯ ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:14:35.271] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:14:43.027] Browser ERROR   ./src/app/page.js:1:1
+Module not found: Can't resolve './components/AboutButton'
+> 1 | import { AboutButton } from "./components/AboutButton";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[00:16:53.430] Server  LOG      ✓ Compiled in 37ms
+[00:17:26.726] Server  ERROR    ⨯ ReferenceError: AboutButton is not defined
+[00:17:26.996] Browser ERROR   uncaughtError: ReferenceError: AboutButton is not defined
+[00:17:29.355] Server  ERROR    ⨯ ReferenceError: AboutButton is not defined
+[00:17:29.552] Server  ERROR    ⨯ ReferenceError: AboutButton is not defined
+[00:17:29.639] Browser ERROR   uncaughtError: ReferenceError: AboutButton is not defined
+[00:19:42.120] Server  LOG      ✓ Compiled in 24ms
+[00:19:42.743] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:20:10.805] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[04:55:09.398] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:55:09.407] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:55:09.407] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:55:09.407] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:55:09.407] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:55:09.408] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.926] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.927] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.928] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.928] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.929] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:56:58.930] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.257] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.258] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.259] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.259] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.260] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:02.261] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.398] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.399] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.399] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.400] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.400] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:05.400] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.491] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.492] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.493] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.493] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.494] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:07.494] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.008] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.009] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.010] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.011] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.012] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:11.013] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.589] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.590] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.590] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.590] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.591] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.591] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.591] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.591] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.592] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.592] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.592] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:15.593] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:28:9
+Parsing ecmascript source code failed
+  26 |       >
+  27 |         <
+> 28 |         {children}
+     |         ^
+  29 |       </body>
+  30 |     </html>
+  31 |   );
+
+Expected '</', got '{'
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:28:10
+Parsing ecmascript source code failed
+  26 |       >
+  27 |         <Header
+> 28 |         {children}
+     |          ^^^^^^^^
+  29 |       </body>
+  30 |     </html>
+  31 |   );
+
+Expected '</', got 'children'
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:57:47.094] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:58:02.757] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:58:03.386] Browser ERROR   uncaughtError: Error: ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[04:58:03.528] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[04:58:03.528] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:00.988] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[05:00:00.989] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[05:00:01.125] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:11.593] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:28.970] Server  ERROR    ⨯ ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[05:00:29.098] Browser ERROR   uncaughtError: Error: ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[05:00:29.241] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:29.241] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:48.035] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:00:55.468] Browser ERROR   ./src/app/layout.js:3:1
+Module not found: Can't resolve './app/components/Header'
+  1 | import { Geist, Geist_Mono } from "next/font/google";
+  2 | import "./globals.css";
+> 3 | import Header from "./app/components/Header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 |
+  6 | const geistSans = Geist({
+
+https://nextjs.org/docs/messages/module-not-found
+[05:01:08.817] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[05:02:39.842] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[05:05:04.225] Server  LOG      ✓ Compiled in 29ms
+[05:06:39.677] Server  LOG      ✓ Compiled in 16ms
+[05:07:12.569] Browser ERROR   ./src/app/components/Header.js:14:9
+Parsing ecmascript source code failed
+  12 |         <a href="#playground" className="nav-item">PLAYGROUND</a>
+  13 |       <
+> 14 |         <span className="divider">|</span>
+     |         ^
+  15 |         <a href="#about" className="nav-item">ABOUT</a>
+  16 |       </nav>
+  17 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:15.385] Browser ERROR   ./src/app/components/Header.js:14:9
+Parsing ecmascript source code failed
+  12 |         <a href="#playground" className="nav-item">PLAYGROUND</a>
+  13 |       </
+> 14 |         <span className="divider">|</span>
+     |         ^
+  15 |         <a href="#about" className="nav-item">ABOUT</a>
+  16 |       </nav>
+  17 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:17.158] Browser ERROR   ./src/app/components/Header.js:14:9
+Parsing ecmascript source code failed
+  12 |         <a href="#playground" className="nav-item">PLAYGROUND</a>
+  13 |       </va
+> 14 |         <span className="divider">|</span>
+     |         ^
+  15 |         <a href="#about" className="nav-item">ABOUT</a>
+  16 |       </nav>
+  17 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:20.910] Browser ERROR   ./src/app/components/Header.js:17:5
+Parsing ecmascript source code failed
+  15 |         <a href="#about" className="nav-item">ABOUT</a>
+  16 |       </nav>
+> 17 |     </header>
+     |     ^
+  18 |   );
+  19 | }
+  20 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:20.910] Browser ERROR   ./src/app/components/Header.js:17:6
+Parsing ecmascript source code failed
+  15 |         <a href="#about" className="nav-item">ABOUT</a>
+  16 |       </nav>
+> 17 |     </header>
+     |      ^^^^^^^^
+  18 |   );
+  19 | }
+  20 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:34.465] Browser ERROR   ./src/app/components/Header.js:18:5
+Parsing ecmascript source code failed
+  16 |         <a href="#about" className="nav-item">ABOUT</a>
+  17 |       </nav>
+> 18 |     </header>
+     |     ^
+  19 |   );
+  20 | }
+  21 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:07:34.465] Browser ERROR   ./src/app/components/Header.js:18:6
+Parsing ecmascript source code failed
+  16 |         <a href="#about" className="nav-item">ABOUT</a>
+  17 |       </nav>
+> 18 |     </header>
+     |      ^^^^^^^^
+  19 |   );
+  20 | }
+  21 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:05.831] Browser ERROR   ./src/app/components/Header.js:19:5
+Parsing ecmascript source code failed
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+> 19 |     </header>
+     |     ^
+  20 |   );
+  21 | }
+  22 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:05.831] Browser ERROR   ./src/app/components/Header.js:19:6
+Parsing ecmascript source code failed
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+> 19 |     </header>
+     |      ^^^^^^^^
+  20 |   );
+  21 | }
+  22 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:09.896] Browser ERROR   ./src/app/components/Header.js:16:9
+Parsing ecmascript source code failed
+  14 |
+  15 |       <nav 
+> 16 |         <span className="divider">|</span>
+     |         ^
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+  19 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:12.814] Browser ERROR   ./src/app/components/Header.js:16:9
+Parsing ecmascript source code failed
+  14 |
+  15 |       <nav class
+> 16 |         <span className="divider">|</span>
+     |         ^
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+  19 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:16.061] Browser ERROR   ./src/app/components/Header.js:16:9
+Parsing ecmascript source code failed
+  14 |
+  15 |       <nav className
+> 16 |         <span className="divider">|</span>
+     |         ^
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+  19 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:20.120] Browser ERROR   ./src/app/components/Header.js:17:9
+Parsing ecmascript source code failed
+  15 |       <nav className=
+  16 |         <span className="divider">|</span>
+> 17 |         <a href="#about" className="nav-item">ABOUT</a>
+     |         ^
+  18 |       </nav>
+  19 |     </header>
+  20 |   );
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:25.074] Browser ERROR   ./src/app/components/Header.js:16:9
+Parsing ecmascript source code failed
+  14 |
+  15 |       <nav className="nav-right"
+> 16 |         <span className="divider">|</span>
+     |         ^
+  17 |         <a href="#about" className="nav-item">ABOUT</a>
+  18 |       </nav>
+  19 |     </header>
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/app/components/Header.js
+    ./src/app/layout.js
+[05:08:28.359] Server  LOG      ✓ Compiled in 9ms
+[05:10:16.808] Server  LOG      ✓ Compiled in 12ms
+[05:10:16.912] Browser ERROR   ./src/app/components/Header.css:12:3
+Parsing CSS source code failed
+  10 |   }
+  11 |   
+> 12 |   /
+     |   ^
+  13 |
+  14 |   /* Logo styling */
+  15 |   .logo {
+
+Invalid empty selector
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:10:20.823] Server  LOG      ✓ Compiled in 9ms
+[05:10:42.500] Server  LOG      ✓ Compiled in 18ms
+[05:11:02.355] Server  LOG      ✓ Compiled in 10ms
+[05:11:21.139] Server  LOG      ✓ Compiled in 29ms
+[05:11:25.312] Server  LOG      ✓ Compiled in 9ms
+[05:11:29.991] Server  LOG      ✓ Compiled in 19ms
+[05:11:37.171] Server  LOG      ✓ Compiled in 11ms
+[05:11:55.825] Server  LOG      ✓ Compiled in 10ms
+[05:12:24.639] Server  LOG      ✓ Compiled in 12ms
+[05:14:25.982] Server  LOG      ✓ Compiled in 16ms
+[05:14:28.150] Server  LOG      ✓ Compiled in 10ms
+[05:14:31.590] Server  LOG      ✓ Compiled in 8ms
+[05:14:38.544] Server  LOG      ✓ Compiled in 30ms
+[05:14:38.647] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:18:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:14:42.217] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:18:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:14:45.871] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:23:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:14:50.692] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:23:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:14:54.112] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:23:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:14:56.510] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:23:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:15:06.338] Server  LOG      ✓ Compiled in 12ms
+[05:16:20.313] Server  LOG      ✓ Compiled in 24ms
+[05:16:20.428] Browser ERROR   ./src/app/components/Header.css
+Error evaluating Node.js code
+CssSyntaxError: /Users/lanah_hango/Documents/Jack Website/src/app/components/Header.css:19:3: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parse (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:29)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:115:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/components/Header.css [Client Component Browser]
+    ./src/app/components/Header.js [Server Component]
+    ./src/app/layout.js [Server Component]
+[05:16:25.168] Server  LOG      ✓ Compiled in 187ms
+[05:16:36.264] Server  LOG      ✓ Compiled in 9ms
+[05:16:37.668] Server  LOG      ✓ Compiled in 4ms
+[05:17:14.476] Server  LOG      ✓ Compiled in 9ms
+[05:19:40.173] Server  LOG      ✓ Compiled in 16ms
+[05:20:40.952] Server  LOG      ✓ Compiled in 39ms
+[05:21:34.654] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[05:25:44.924] Server  LOG      ✓ Compiled in 18ms
