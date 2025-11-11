@@ -1,0 +1,41 @@
+.works-page {
+    background-color: #171717;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .works-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .works-content h1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* always 3 columns */
+    gap: 10px; /* adjust spacing between boxes */
+    width: 90%; /* makes grid take up more page width */
+    max-width: 1400px; /* optional: keeps it from stretching too far on big screens */
+    margin: 0 auto; /* centers the grid */
+    padding: 40px 0;
+  }
+  
+  .work-box {
+    background-color: #555;
+    aspect-ratio: 1 / 1; /* keeps square shape */
+    width: 100%; /* fill grid cell */
+    border: 1px solid #333;
+    transition: transform 0.2s ease;
+  }
+  
+  .work-box:hover {
+    background-color: #6b6b6b;
+    transform: scale(1.03);
+  }
+  
