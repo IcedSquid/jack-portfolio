@@ -1,0 +1,43 @@
+/* [project]/src/app/playground/playground.css [app-client] (css) */
+.works-page {
+  color: #fff;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+}
+
+.works-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+}
+
+.works-content h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.works-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+}
+
+.work-box {
+  aspect-ratio: 1;
+  background-color: #555;
+  border: 1px solid #333;
+  width: 100%;
+  transition: transform .2s;
+}
+
+.work-box:hover {
+  background-color: #6b6b6b;
+  transform: scale(1.03);
+}
+
+/*# sourceMappingURL=src_app_playground_playground_f96d15fc.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///Users/lanah_hango/Documents/Jack%20Website/src/app/playground/page.js"],"sourcesContent":["import React from \"react\";\nimport Header from \"../components/Header\";\nimport \"./playground.css\";\n\nexport default function WorksPage() {\n  return (\n    <div className=\"works-page\">\n\n      <main className=\"works-content\">\n        <h1>Playground</h1>\n        <div className=\"works-grid\">\n          {/* 9 boxes */}\n          {Array.from({ length: 9 }).map((_, index) => (\n            <a href=\"#\" key={index} className=\"work-box\"></a>\n          ))}\n        </div>\n      </main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;;AAGe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBAEb,cAAA,8OAAC;YAAK,WAAU;;8BACd,8OAAC;8BAAG;;;;;;8BACJ,8OAAC;oBAAI,WAAU;8BAEZ,MAAM,IAAI,CAAC;wBAAE,QAAQ;oBAAE,GAAG,GAAG,CAAC,CAAC,GAAG,sBACjC,8OAAC;4BAAE,MAAK;4BAAgB,WAAU;2BAAjB;;;;;;;;;;;;;;;;;;;;;AAM7B","debugId":null}}]
+}

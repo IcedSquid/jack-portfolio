@@ -2257,3 +2257,228 @@ It can also happen if the client has a browser extension installed which messes 
                   ...
 
 [05:25:44.924] Server  LOG      ✓ Compiled in 18ms
+[06:14:05.055] Server  LOG      ✓ Compiled in 86ms
+[06:14:15.903] Server  LOG      ✓ Compiled in 11ms
+[06:15:53.415] Server  LOG      ✓ Compiled in 48ms
+[06:16:26.900] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/works" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[06:16:51.887] Server  ERROR    ⨯ ReferenceError: Header is not defined
+[06:16:52.005] Browser ERROR   uncaughtError: ReferenceError: Header is not defined
+[06:16:57.976] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/works" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[06:18:52.077] Server  LOG      ✓ Compiled in 29ms
+[06:19:33.962] Server  LOG      ✓ Compiled in 27ms
+[06:19:40.904] Server  LOG      ✓ Compiled in 20ms
+[06:19:49.484] Server  LOG      ✓ Compiled in 9ms
+[06:19:52.669] Server  LOG      ✓ Compiled in 9ms
+[06:19:59.854] Server  LOG      ✓ Compiled in 9ms
+[06:22:10.414] Server  LOG      ✓ Compiled in 28ms
+[06:22:16.763] Server  LOG      ✓ Compiled in 7ms
+[06:22:49.525] Server  LOG      ✓ Compiled in 11ms
+[06:22:50.559] Server  LOG      ✓ Compiled in 8ms
+[06:23:00.074] Server  LOG      ✓ Compiled in 8ms
+[06:23:03.081] Server  LOG      ✓ Compiled in 4ms
+[06:23:08.176] Server  LOG      ✓ Compiled in 11ms
+[06:23:08.286] Browser ERROR   ./src/app/works/works.css:21:55
+Parsing CSS source code failed
+  19 |   .works-grid {
+  20 |     display: grid;
+> 21 |     grid-template-columns: repeat(3, auto-fit, minmax));
+     |                                                       ^
+  22 |     grid-gap: 10px;
+  23 |   }
+  24 |   
+
+Unexpected token CloseParenthesis
+
+Import trace:
+  Client Component Browser:
+    ./src/app/works/works.css [Client Component Browser]
+    ./src/app/works/page.js [Server Component]
+[06:23:12.956] Browser ERROR   ./src/app/works/works.css:21:49
+Parsing CSS source code failed
+  19 |   .works-grid {
+  20 |     display: grid;
+> 21 |     grid-template-columns: repeat(3, auto-fit, ));
+     |                                                 ^
+  22 |     grid-gap: 10px;
+  23 |   }
+  24 |   
+
+Unexpected token CloseParenthesis
+
+Import trace:
+  Client Component Browser:
+    ./src/app/works/works.css [Client Component Browser]
+    ./src/app/works/page.js [Server Component]
+[06:23:20.555] Browser ERROR   ./src/app/works/works.css:21:37
+Parsing CSS source code failed
+  19 |   .works-grid {
+  20 |     display: grid;
+> 21 |     grid-template-columns: repeat(3));
+     |                                     ^
+  22 |     grid-gap: 10px;
+  23 |   }
+  24 |   
+
+Unexpected token CloseParenthesis
+
+Import trace:
+  Client Component Browser:
+    ./src/app/works/works.css [Client Component Browser]
+    ./src/app/works/page.js [Server Component]
+[06:23:22.259] Browser ERROR   ./src/app/works/works.css:21:37
+Parsing CSS source code failed
+  19 |   .works-grid {
+  20 |     display: grid;
+> 21 |     grid-template-columns: repeat(3));
+     |                                     ^
+  22 |     grid-gap: 10px
+  23 |   }
+  24 |   
+
+Unexpected token CloseParenthesis
+
+Import trace:
+  Client Component Browser:
+    ./src/app/works/works.css [Client Component Browser]
+    ./src/app/works/page.js [Server Component]
+[06:23:24.550] Browser ERROR   ./src/app/works/works.css:21:37
+Parsing CSS source code failed
+  19 |   .works-grid {
+  20 |     display: grid;
+> 21 |     grid-template-columns: repeat(3));
+     |                                     ^
+  22 |     grid-gap: 10px;
+  23 |   }
+  24 |   
+
+Unexpected token CloseParenthesis
+
+Import trace:
+  Client Component Browser:
+    ./src/app/works/works.css [Client Component Browser]
+    ./src/app/works/page.js [Server Component]
+[06:23:36.650] Server  LOG      ✓ Compiled in 9ms
+[06:23:37.703] Server  LOG      ✓ Compiled in 5ms
+[06:24:30.379] Server  LOG      ✓ Compiled in 18ms
+[06:24:58.322] Server  LOG      ✓ Compiled in 15ms
+[06:25:17.274] Server  LOG      ✓ Compiled in 11ms
+[06:25:36.774] Server  LOG      ✓ Compiled in 10ms
+[06:25:42.950] Server  LOG      ✓ Compiled in 7ms
+[06:26:03.793] Server  LOG      ✓ Compiled in 18ms
+[06:30:14.623] Server  LOG      ✓ Compiled in 31ms
+[06:30:17.176] Server  LOG      ✓ Compiled in 14ms
+[06:30:23.509] Server  LOG      ✓ Compiled in 7ms
+[06:30:24.615] Server  LOG      ✓ Compiled in 7ms
+[06:30:27.889] Server  LOG      ✓ Compiled in 9ms
+[06:31:15.501] Server  LOG      ✓ Compiled in 11ms
+[06:32:29.694] Server  LOG      ✓ Compiled in 26ms
+[06:33:17.253] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_2ae47f08-module__h69qWW__variable geist_mono_eb58308d-module__w_p2Lq__var..."
+-                           data-new-gr-c-s-check-loaded="9.75.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[06:35:42.981] Server  LOG      ✓ Compiled in 28ms

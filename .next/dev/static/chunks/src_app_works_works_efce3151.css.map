@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/lanah_hango/Documents/Jack%20Website/src/app/works/works.css"],"sourcesContent":[".works-page {\n    background-color: #1e1e1e;\n    min-height: 100vh;\n    color: white;\n  }\n  \n  .works-content {\n    padding: 2rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n  \n  .works-content h1 {\n    margin-bottom: 2rem;\n    font-size: 1.8rem;\n  }\n  \n  .works-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr); /* always 3 columns */\n    gap: 10px; /* adjust spacing between boxes */\n    width: 90%; /* makes grid take up more page width */\n    max-width: 1400px; /* optional: keeps it from stretching too far on big screens */\n    margin: 0 auto; /* centers the grid */\n    padding: 40px 0;\n  }\n  \n  .work-box {\n    background-color: #555;\n    aspect-ratio: 1 / 1; /* keeps square shape */\n    width: 100%; /* fill grid cell */\n    border: 1px solid #333;\n    transition: transform 0.2s ease;\n  }\n  \n  .work-box:hover {\n    background-color: #6b6b6b;\n    transform: scale(1.03);\n  }\n  "],"names":[],"mappings":"AAAA;;;;;;AAME;;;;;;;AAOA;;;;;AAKA;;;;;;;;;;AAUA;;;;;;;;AAQA","debugId":null}}]
+}
