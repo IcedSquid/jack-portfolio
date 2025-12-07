@@ -1,39 +1,20 @@
 "use client";
 
-import "@/styles/globals.css"; // ensure tailwind import
-import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabaseClient";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { supabase } from "@/lib/supabaseClient";
 
 export default function AdminLayout({ children }) {
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function check() {
-      const { data } = await supabase.auth.getUser();
-      if (!data?.user) {
-        router.push("/login");
-      } else {
-        setLoading(false);
-      }
-    }
-    check();
-  }, [router]);
-
-  if (loading) return <div className="p-8 text-white">Checking auth...</div>;
 
   return (
     <div className="min-h-screen flex">
 
-      {/* ⭐ SIDEBAR (dark background, white text) */}
+      {/* ⭐ SIDEBAR */}
       <aside
         className="w-60 border-r p-4"
         style={{
           backgroundColor: "#1d1d1d",
           color: "white",
-          borderColor: "#333", // optional subtle border
+          borderColor: "#333",
         }}
       >
         <h2 className="text-xl font-bold mb-4 text-white">Howdy</h2>
@@ -58,7 +39,7 @@ export default function AdminLayout({ children }) {
           <button
             onClick={async () => {
               await supabase.auth.signOut();
-              router.push("/login");
+              window.location.href = "/login"; // uses browser redirect instead of router
             }}
             className="w-full text-left px-3 py-2 rounded bg-[#2a2a2a] text-white hover:bg-[#3a3a3a]"
           >
@@ -80,4 +61,5 @@ export default function AdminLayout({ children }) {
     </div>
   );
 }
+
 
