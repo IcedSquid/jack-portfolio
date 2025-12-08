@@ -32,42 +32,44 @@ export default async function ProjectPage({ params }) {
     <div className="text-white w-full">
 
       {/* ---------------- HERO SECTION ---------------- */}
-      <div className="relative w-full bg-gray-700">
-        {project.hero_url ? (
-          <img
-            src={project.hero_url}
-            className="w-full object-cover"
-            alt=""
-          />
-        ) : (
-          <div className="w-full h-[400px] bg-gray-600"></div>
-        )}
+      <div className="relative w-full h-[400px] bg-gray-600 overflow-hidden">
+  
+  {/* HERO IMAGE — must be inside this same relative container */}
+  {project.hero_url && (
+    <img
+      src={project.hero_url}
+      className="absolute inset-0 w-full h-full object-cover"
+      alt=""
+    />
+  )}
 
-        {/* Description in top-right */}
-        <div className="absolute top-6 right-6 w-[260px] text-right text-white drop-shadow-lg">
-          <p className="leading-tight">{project.description}</p>
-        </div>
+  {/* DESCRIPTION (top-right) */}
+  <div className="absolute top-10 right-10 text-sm max-w-xs text-right text-white drop-shadow-lg">
+    {project.description}
+  </div>
 
-        {/* Title overlapping the hero */}
-        <h1 className="absolute -bottom-10 left-6 text-5xl font-bold drop-shadow-lg">
-          {project.title}
-        </h1>
-      </div>
+  {/* TITLE (bottom-left) */}
+  <h1 className="absolute bottom-6 left-10 text-5xl font-bold text-white drop-shadow-lg">
+    {project.title}
+  </h1>
+</div>
 
-      {/* Spacer so title doesn't cover images */}
-      <div className="h-20"></div>
 
-      {/* ---------------- IMAGE LIST SECTION ---------------- */}
-      <div className="flex flex-col gap-12 w-full max-w-[1200px] mx-auto px-6 py-12">
-        {images?.map((img) => (
-          <img
-            key={img.id}
-            src={img.image_url}
-            alt=""
-            className="w-full rounded-sm"
-          />
-        ))}
-      </div>
+
+            {/* Spacer so title doesn't cover images */}
+            <div className="h-20"></div>
+
+            {/* ---------------- IMAGE LIST SECTION ---------------- */}
+            <div className="flex flex-col gap-12 w-full max-w-[1200px] mx-auto px-6 py-12">
+                {images?.map((img) => (
+                <img
+                    key={img.id}
+                    src={img.image_url}
+                    alt=""
+                    className="w-full rounded-sm"
+                />
+                ))}
+            </div>
 
     </div>
   );
