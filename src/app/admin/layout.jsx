@@ -41,7 +41,7 @@ export default function AdminLayout({ children }) {
               await supabase.auth.signOut();
               window.location.href = "/login"; // uses browser redirect instead of router
             }}
-            className="w-full text-left px-3 py-2 rounded bg-[#2a2a2a] text-white hover:bg-[#3a3a3a]"
+            className="w-full text-left px-3 py-2 text-white border-2 border-transparent hover:border-2 hover:border-[#FF4242]"
           >
             Sign out
           </button>

@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabaseClient";
 import { useRouter } from "next/navigation";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 export default function NewProjectPage() {
   const router = useRouter();
@@ -11,11 +12,27 @@ export default function NewProjectPage() {
   const [description, setDescription] = useState("");
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);
+  const [projectType, setProjectType] = useState("long");
+  const [thumbnail, setThumbnail] = useState(null);
 
   function onFilesChange(e) {
     setFiles(Array.from(e.target.files));
   }
 
+  function onDragEnd(result) {
+    if (!result.destination) return;
+
+    const newFiles = Array.from(files);
+    const [moved] = newFiles.splice(result.source.index, 1);
+    newFiles.splice(result.destination.index, 0, moved);
+
+    setFiles(newFiles);
+  }
+
+  function onThumbnailChange(e) {
+    setThumbnail(e.target.files[0]);
+  }
+  
   async function uploadFile(file) {
     const ext = file.name.split(".").pop();
     const fileName = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
@@ -29,8 +46,20 @@ export default function NewProjectPage() {
     e.preventDefault();
     setUploading(true);
     try {
+      const { data: authData } = await supabase.auth.getUser();
+      console.log("AUTH USER:", authData);
+
+      const thumbnailUrl = await uploadFile(thumbnail);
+
       // 1) create project row
-      const { data: pData, error: insertError } = await supabase.from("projects").insert([{ title, description }]).select().single();
+      const { data: pData, error: insertError } = await supabase
+        .from("projects")
+        .insert([{ title, description,
+          project_type: projectType,
+          thumbnail_url: thumbnailUrl,
+         }])
+        .select()
+        .single();
       if (insertError) throw insertError;
       const projectId = pData.id;
 
@@ -85,6 +114,53 @@ export default function NewProjectPage() {
           />
         </div>
   
+        {/* PROJECT TYPE SELECTOR */}
+        <div>
+          <label className="block text-sm mb-2 text-white">Project Type</label>
+
+        <div className="flex gap-4 text-white">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="long"
+              checked={projectType === "long"}
+              onChange={() => setProjectType("long")}
+            />
+            <span>Long Form (goes in /works)</span>
+          </label>
+
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="short"
+              checked={projectType === "short"}
+              onChange={() => setProjectType("short")}
+            />
+            <span>Short Form (goes in /playground)</span>
+          </label>
+        </div>
+      </div>
+
+
+        {/* THUMBNAIL UPLOAD */}
+        <div>
+          <label className="block text-sm mb-1 text-white">Thumbnail (required)</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={onThumbnailChange}
+            className="text-white"
+            required
+          />
+
+          {thumbnail && (
+            <div className="mt-2 text-sm text-gray-300">
+              {thumbnail.name}
+            </div>
+           )}
+          </div>
+
+
         {/* FILE UPLOAD */}
         <div>
           <label className="block text-sm mb-1 text-white">Images (multiple)</label>
@@ -95,14 +171,45 @@ export default function NewProjectPage() {
             onChange={onFilesChange}
             className="text-white"
           />
-          {files.length > 0 && (
-            <div className="mt-2 text-sm text-gray-300">
-              {files.length} files selected
-            </div>
-          )}
+         {files.length > 0 && (
+  <DragDropContext onDragEnd={onDragEnd}>
+    <Droppable droppableId="images">
+      {(provided) => (
+        <div
+          ref={provided.innerRef}
+          {...provided.droppableProps}
+          className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4"
+        >
+          {files.map((file, i) => (
+            <Draggable key={file.name} draggableId={file.name} index={i}>
+              {(provided) => (
+                <div
+                  ref={provided.innerRef}
+                  {...provided.draggableProps}
+                  {...provided.dragHandleProps}
+                  className="relative bg-[#2a2a2a] p-2 rounded"
+                >
+                  <img
+                    src={URL.createObjectURL(file)}
+                    alt=""
+                    className="w-full h-32 object-cover rounded"
+                  />
+                  <p className="text-xs text-gray-400 mt-1">{file.name}</p>
+                </div>
+              )}
+            </Draggable>
+          ))}
+          {provided.placeholder}
+        </div>
+      )}
+    </Droppable>
+  </DragDropContext>
+)}
+
+
         </div>
   
-        {/* CREATE BUTTON — custom offset style */}
+        {/* PUBLISH BUTTON — custom offset style */}
         <div>
           <button
             type="submit"
@@ -115,7 +222,7 @@ export default function NewProjectPage() {
             {/* FRONT BUTTON */}
             <div className="relative z-10 w-full h-full bg-[#1D1D1D] border-2 border-[#6ECFF6] flex items-center justify-center">
               <span className="text-[#6ECFF6] text-base">
-                {uploading ? "Uploading..." : "Create Project"}
+                {uploading ? "Uploading..." : "Publish"}
               </span>
             </div>
           </button>
