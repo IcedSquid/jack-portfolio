@@ -1,39 +1,44 @@
+import Link from "next/link";
 import { supabase } from "@/lib/supabaseClient";
 
-export default async function ProjectPage({ params }) {
-  const { id } = params;
-
-  // 1. Fetch project data
-  const { data: project } = await supabase
+export default async function WorksPage() {
+  // 1. Fetch ONLY long-form projects
+  const { data: projects, error } = await supabase
     .from("projects")
     .select("*")
-    .eq("id", id)
-    .single();
+    .eq("project_type", "long")
+    .order("created_at", { ascending: false });
 
-  // 2. Fetch images for this project, ordered
-  const { data: images } = await supabase
-    .from("project_images")
-    .select("*")
-    .eq("project_id", id)
-    .order("order_index", { ascending: true });
-
-  if (!project) {
-    return <div className="p-8 text-white">Project not found.</div>;
+  if (error) {
+    console.error(error);
+    return <div className="p-8 text-white">Error loading works.</div>;
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 text-white">
-      <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-      <p className="text-lg text-gray-300 mb-10">{project.description}</p>
+    <div className="text-white px-6 py-12 max-w-6xl mx-auto">
+      <h1 className="text-4xl font-bold text-center mb-10">Works</h1>
 
-      <div className="space-y-10">
-        {images?.map((img) => (
-          <img
-            key={img.id}
-            src={img.image_url}
-            alt=""
-            className="w-full rounded"
-          />
+      {/* GRID */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {projects?.map((proj) => (
+          <Link 
+            key={proj.id} 
+            href={`/works/${proj.id}`}
+            className="block group"
+          >
+            <div className="w-full aspect-square bg-gray-600">
+              {proj.thumbnail_url ? (
+                <img
+                  src={proj.thumbnail_url}
+                  alt={proj.title}
+                  className="w-full h-full object-cover group-hover:opacity-90 transition"
+                />
+              ) : (
+                // Placeholder box
+                <div className="w-full h-full bg-gray-700"></div>
+              )}
+            </div>
+          </Link>
         ))}
       </div>
     </div>

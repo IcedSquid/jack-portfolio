@@ -11,6 +11,7 @@ export default function NewProjectPage() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [files, setFiles] = useState([]);
+  const [heroImage, setHeroImage] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [projectType, setProjectType] = useState("long");
   const [thumbnail, setThumbnail] = useState(null);
@@ -51,12 +52,18 @@ export default function NewProjectPage() {
 
       const thumbnailUrl = await uploadFile(thumbnail);
 
+      // Upload Hero Image
+      let heroUrl = null;
+      if (heroImage) {
+        heroUrl = await uploadFile(heroImage);
+      }
       // 1) create project row
       const { data: pData, error: insertError } = await supabase
         .from("projects")
         .insert([{ title, description,
           project_type: projectType,
           thumbnail_url: thumbnailUrl,
+          hero_image_url: heroUrl,
          }])
         .select()
         .single();
@@ -160,6 +167,25 @@ export default function NewProjectPage() {
            )}
           </div>
 
+        {/* HERO IMAGE UPLOAD */}
+          <div>
+            <label className="block text-sm mb-1 text-white">Hero Image (Full Width)</label>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => setHeroImage(e.target.files[0])}
+                className="text-white"
+              />
+
+              {heroImage && (
+                <div className="mt-2">
+                  <img
+                    src={URL.createObjectURL(heroImage)}
+                    className="w-full h-40 object-cover rounded"
+                  />
+              </div>
+            )}
+          </div>
 
         {/* FILE UPLOAD */}
         <div>
