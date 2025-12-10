@@ -1,129 +1,103 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabaseClient";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import OffsetButton from "@/components/ui/offsetbutton";
+import Link from "next/link";
 
-// shadcn ui components
-import { Button } from "@/components/ui/button";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
-export default function AdminPage() {
-  console.log("SUPABASE URL =", process.env.NEXT_PUBLIC_SUPABASE_URL);
-  console.log("SUPABASE KEY =", process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
-
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
+export default function AdminDashboard() {
   const [projects, setProjects] = useState([]);
 
-  // ---- AUTH CHECK ----
+  // ----------------------------------
+  // LOAD PROJECTS ON PAGE LOAD
+  // ----------------------------------
   useEffect(() => {
-    async function checkUser() {
-      const { data } = await supabase.auth.getUser();
+    async function loadProjects() {
+      const { data, error } = await supabase
+        .from("projects")
+        .select("*")
+        .order("created_at", { ascending: false }); // ✅ CHANGED: no updated_at
 
-      if (!data.user) {
-        router.push("/login");
-      } else {
-        setLoading(false);
-        fetchProjects();
+      if (error) {
+        console.error("Error loading projects:", error);
       }
+
+      setProjects(data || []);
     }
-    checkUser();
-  }, [router]);
 
-  // ---- FETCH PROJECT LIST ----
-  async function fetchProjects() {
-    const { data, error } = await supabase.from("projects").select(`
-      id, title, thumbnail, created_at
-    `);
-
-    if (!error) setProjects(data);
-  }
-
-  if (loading) return <div>Checking auth...</div>;
+    loadProjects();
+  }, []);
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">Dashboard</h1>
+    <div className="text-white p-10">
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-4xl font-bold">All Projects</h1>
 
-      {/* TOP BAR */}
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-semibold">All Projects</h2>
+        <Link href="/admin/projects/new">
+          <button className="relative group h-12 w-48 font-medium">
+            {/* BACK LAYER */}
+            <div className="absolute inset-0 translate-x-1 translate-y-1 bg-[#00D8FF]"></div>
 
-        <OffsetButton
-          className="w-48" // adjust width if needed
-          onClick={() => router.push("/admin/projects/new")}
-        >
-          + New Project
-        </OffsetButton>
+            {/* FRONT BUTTON */}
+            <div className="relative z-10 w-full h-full bg-black border-2 border-[#00D8FF] flex items-center justify-center hover:bg-[#11326E]">
+              <span className="text-[#00D8FF] text-base">+ New Project</span>
+            </div>
+          </button>
+        </Link>
       </div>
 
-      {/* PROJECT TABLE */}
-      <div className="border rounded-lg">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead>Thumbnail</TableHead>
-              <TableHead>Title</TableHead>
-              <TableHead>Date</TableHead>
-              <TableHead className="text-right">Edit</TableHead>
-            </TableRow>
-          </TableHeader>
+      <table className="w-full overflow-hidden">
+        <thead className="bg-black text-gray-300">
+          <tr>
+            <th className="p-4 text-left">Thumbnail</th>
+            <th className="p-4  pr-50 text-left">Title</th>
+            <th className="p-1 text-left">Modify</th> {/* ✅ Only these three columns */}
+          </tr>
+        </thead>
 
-          <TableBody>
-            {projects.length === 0 && (
-              <TableRow>
-                <TableCell colSpan={4}>
-                  <p className="py-4 text-center text-gray-500">
-                    No projects uploaded yet.
-                  </p>
-                </TableCell>
-              </TableRow>
-            )}
+        <tbody>
+          {/* Empty State */}
+          {projects.length === 0 && (
+            <tr>
+              <td colSpan="3" className="p-6 text-center text-gray-500">
+                No projects uploaded yet.
+              </td>
+            </tr>
+          )}
 
-            {projects.map((p) => (
-              <TableRow key={p.id}>
-                <TableCell>
-                  {p.thumbnail ? (
-                    <img
-                      src={p.thumbnail}
-                      className="w-20 h-20 object-cover rounded-md"
-                    />
-                  ) : (
-                    <div className="w-20 h-20 bg-gray-200 rounded-md flex items-center justify-center text-xs">
-                      No Image
-                    </div>
-                  )}
-                </TableCell>
+          {/* DISPLAY EACH PROJECT */}
+          {projects.map((p) => (
+            <tr
+              key={p.id}
+              className="border-t border-gray-800"
+            >
+              {/* THUMBNAIL */}
+              <td className="p-4">
+                {p.thumbnail_url ? (
+                  <img
+                    src={p.thumbnail_url}
+                    className="w-26 h-26 object-cover"
+                  />
+                ) : (
+                  <div className="w-24 h-20 bg-gray-700 rounded" />
+                )}
+              </td>
 
-                <TableCell>{p.title}</TableCell>
-                <TableCell>
-                  {new Date(p.created_at).toLocaleDateString()}
-                </TableCell>
+              {/* TITLE */}
+              <td className="p-4">{p.title}</td>
 
-                <TableCell className="text-right">
-                  <Button
-                    variant="secondary"
-                    onClick={() => router.push(`/admin/edit/${p.id}`)}
-                  >
-                    Edit
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </div>
+              {/* EDIT BUTTON */}
+              <td className="p-4">
+                <Link href={`/admin/projects/${p.id}/edit`}>
+                  <button className="px-4 py-1 border border-[#575757] text-white hover:bg-[#303030]">
+                  • • •
+                  </button>
+                </Link>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
 
-  

@@ -32,27 +32,27 @@ export default async function ProjectPage({ params }) {
     <div className="text-white w-full">
 
       {/* ---------------- HERO SECTION ---------------- */}
-      <div className="relative w-full h-[400px] bg-gray-600 overflow-hidden">
-  
-  {/* HERO IMAGE — must be inside this same relative container */}
-  {project.hero_url && (
-    <img
-      src={project.hero_url}
-      className="absolute inset-0 w-full h-full object-cover"
-      alt=""
-    />
-  )}
+      <div className="relative w-full h-[500px] bg-gray-700 overflow-hidden">
 
-  {/* DESCRIPTION (top-right) */}
-  <div className="absolute top-10 right-10 text-sm max-w-xs text-right text-white drop-shadow-lg">
-    {project.description}
-  </div>
+            {/* HERO IMAGE */}
+                {project.hero_url && (
+                <img
+                    src={project.hero_url}
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
+                )}
 
-  {/* TITLE (bottom-left) */}
-  <h1 className="absolute bottom-6 left-10 text-5xl font-bold text-white drop-shadow-lg">
-    {project.title}
-  </h1>
-</div>
+                {/* DESCRIPTION (upper right, moved inward/down) */}
+                <div className="absolute top-16 right-20 text-base max-w-sm text-white drop-shadow-lg">
+                {project.description}
+                </div>
+
+                {/* TITLE (lower left, like your cyan box) */}
+                <h1 className="absolute bottom-20 left-20 text-6xl font-bold leading-none drop-shadow-lg">
+                {project.title}
+                </h1>
+                </div>
 
 
 

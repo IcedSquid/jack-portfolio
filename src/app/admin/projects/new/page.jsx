@@ -1,4 +1,3 @@
-// src/app/admin/projects/new/page.jsx
 "use client";
 
 import { useState } from "react";
@@ -246,7 +245,7 @@ export default function NewProjectPage() {
             <div className="absolute inset-0 translate-x-1 translate-y-1 bg-[#6ECFF6]"></div>
   
             {/* FRONT BUTTON */}
-            <div className="relative z-10 w-full h-full bg-[#1D1D1D] border-2 border-[#6ECFF6] flex items-center justify-center">
+            <div className="relative z-10 w-full h-full bg-[#1D1D1D] border-2 border-[#6ECFF6] flex items-center justify-center hover:bg-[#11326E]">
               <span className="text-[#6ECFF6] text-base">
                 {uploading ? "Uploading..." : "Publish"}
               </span>
