@@ -2,7 +2,6 @@
     background-color: #1e1e1e;
     min-height: 100vh;
     color: white;
-    padding-top: 260px;
   }
   
   .works-content {
@@ -13,8 +12,10 @@
   }
   
   .works-content h1 {
+    margin-top: 0;
     margin-bottom: 2rem;
     font-size: 1.8rem;
+    font-weight: 800;
   }
   
   .works-grid {

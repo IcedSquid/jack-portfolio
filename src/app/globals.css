@@ -79,7 +79,7 @@
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
+  --background: #1e1e1e;
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);
@@ -120,4 +120,12 @@
     @apply bg-background text-foreground;
    
   }
+}
+
+.page-content {
+  padding-top: 100px; /* header height */
+}
+
+h1, h2, h3 {
+  margin-top: 0;
 }

@@ -4,8 +4,8 @@ export default function AboutPage() {
   --------------------------------------------------- */
 
   const name = {
-    first: "Name",
-    last: "Last Name",
+    first: "Jack A.",
+    last: "Catchings",
   };
 
   const introText = `
@@ -18,7 +18,7 @@ export default function AboutPage() {
   const education = [
     {
       label: "Education",
-      text: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+      text: "Auburn University",
     },
   ];
 
