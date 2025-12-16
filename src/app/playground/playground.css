@@ -1,7 +1,8 @@
 .works-page {
-    background-color: #171717;
+    background-color: #1e1e1e;
     min-height: 100vh;
     color: white;
+    padding-top: 260px;
   }
   
   .works-content {
