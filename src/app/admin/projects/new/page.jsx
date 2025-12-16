@@ -98,6 +98,33 @@ export default function NewProjectPage() {
   
       <form onSubmit={handleSubmit} className="space-y-6">
         
+        {/* PROJECT TYPE SELECTOR */}
+        <div>
+          <label className="block text-sm mb-2 text-white">Project Type</label>
+
+        <div className="flex gap-4 text-white">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="long"
+              checked={projectType === "long"}
+              onChange={() => setProjectType("long")}
+            />
+            <span>Long (Works)</span>
+          </label>
+
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="short"
+              checked={projectType === "short"}
+              onChange={() => setProjectType("short")}
+            />
+            <span>Short (Playground)</span>
+          </label>
+        </div>
+      </div>
+        
         {/* TITLE */}
         <div>
           <label className="block text-sm mb-1 text-white">Title</label>
@@ -111,6 +138,8 @@ export default function NewProjectPage() {
   
         {/* DESCRIPTION */}
         <div>
+        {projectType === "long" && (
+        <>
           <label className="block text-sm mb-1 text-white">Description</label>
           <textarea
             value={description}
@@ -118,34 +147,11 @@ export default function NewProjectPage() {
             className="w-full p-3 rounded-none bg-transparent border border-[#888888] text-white placeholder-gray-400"
             rows={5}
           />
+        </>
+        )}
         </div>
   
-        {/* PROJECT TYPE SELECTOR */}
-        <div>
-          <label className="block text-sm mb-2 text-white">Project Type</label>
-
-        <div className="flex gap-4 text-white">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="radio"
-              value="long"
-              checked={projectType === "long"}
-              onChange={() => setProjectType("long")}
-            />
-            <span>Long Form (goes in /works)</span>
-          </label>
-
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="radio"
-              value="short"
-              checked={projectType === "short"}
-              onChange={() => setProjectType("short")}
-            />
-            <span>Short Form (goes in /playground)</span>
-          </label>
-        </div>
-      </div>
+        
 
 
         {/* THUMBNAIL UPLOAD */}
@@ -168,6 +174,8 @@ export default function NewProjectPage() {
 
         {/* HERO IMAGE UPLOAD */}
           <div>
+          {projectType === "long" && (
+          <>
             <label className="block text-sm mb-1 text-white">Hero Image (Full Width)</label>
               <input
                 type="file"
@@ -175,6 +183,8 @@ export default function NewProjectPage() {
                 onChange={(e) => setHeroImage(e.target.files[0])}
                 className="text-white"
               />
+            </>
+          )}
 
               {heroImage && (
                 <div className="mt-2">
