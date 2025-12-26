@@ -36,9 +36,9 @@ export default async function ProjectPage({ params }) {
       <div className="relative w-full h-[500px] bg-gray-700 overflow-hidden">
 
             {/* HERO IMAGE */}
-                {project.hero_url && (
+                {project.hero_image_url && (
                 <img
-                    src={project.hero_url}
+                    src={project.hero_image_url}
                     alt=""
                     className="absolute inset-0 w-full h-full object-cover"
                 />

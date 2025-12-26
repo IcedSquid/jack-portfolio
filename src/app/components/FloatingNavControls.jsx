@@ -22,8 +22,6 @@ export default function FloatingNavControls({
     return () => window.removeEventListener("scroll", onScroll);
   }, [threshold]);
 
-  if (!visible) return null;
-
   return (
     <>
       {/* Bottom-left: Back to Works */}
@@ -32,7 +30,7 @@ export default function FloatingNavControls({
           type="button"
           onClick={() => router.push(backHref)}
           className={`fixed bottom-7 left-9 z-50 border border-[#898989] bg-[#1d1d1d] px-4 py-3 text-[#898989] shadow-lg hover:bg-[#11326E] hover:border-[#00CCFF] hover:text-[#00CCFF]
-            transition-all duration-500 ease-in-out
+            transition-all duration-300 ease-in-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
           `}
           aria-label="Back to Works"
@@ -47,7 +45,7 @@ export default function FloatingNavControls({
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className={`fixed bottom-7 right-9 z-50 border border-[#898989] bg-[#1d1d1d] px-4 py-3 text-[#898989] shadow-lg hover:bg-[#11326E] hover:border-[#00CCFF] hover:text-[#00CCFF]
-            transition-all duration-500 ease-in-out
+            transition-all duration-300 ease-in-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"}
           `}          
           aria-label="Back to top"
