@@ -44,7 +44,28 @@
   .logo {
     font-weight: bold;
     font-size: 1.5rem;
+
+    /* outline text */
+    color: transparent;
+    -webkit-text-stroke: 0.8px #00CCFF;
+
+    /* smooth transitions */
+    transition:
+      color 0.2s ease,
+      text-shadow 0.2s ease,
+      -webkit-text-stroke 0.2s ease;
   }
+
+  .logo:hover {
+    /* fill appears on hover */
+    color: #00CCFF;
+  
+    /* glow effect */
+    text-shadow:
+      0 0 6px rgba(0, 81, 231, 0.6),
+      0 0 12px rgba(0, 81, 231, 0.4),
+      0 0 20px rgba(0, 81, 231, 0.25);
+  }  
   
   /* Navigation links styling */
   .nav-links {
