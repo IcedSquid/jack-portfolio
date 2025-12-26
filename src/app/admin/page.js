@@ -6,16 +6,24 @@ import Link from "next/link";
 
 export default function AdminDashboard() {
   const [projects, setProjects] = useState([]);
+  const [sortBy, setSortBy] = useState("newest");
 
   // ----------------------------------
   // LOAD PROJECTS ON PAGE LOAD
   // ----------------------------------
   useEffect(() => {
     async function loadProjects() {
-      const { data, error } = await supabase
-        .from("projects")
-        .select("*")
-        .order("created_at", { ascending: false }); // ✅ CHANGED: no updated_at
+      let query = supabase.from("projects").select("*");
+
+      if (sortBy === "newest") {
+        query = query.order("created_at", { ascending: false });
+      }
+
+      if (sortBy === "oldest") {
+        query = query.order("created_at", { ascending: true });
+      }
+
+      const { data, error } = await query;
 
       if (error) {
         console.error("Error loading projects:", error);
@@ -25,13 +33,30 @@ export default function AdminDashboard() {
     }
 
     loadProjects();
-  }, []);
+  }, [sortBy]);
 
   return (
     <div className="text-white p-10">
-      <div className="flex justify-between items-center mb-10">
         <h1 className="text-4xl font-bold">All Projects</h1>
 
+      <div className="flex justify-between items-center mb-10">
+        {/* Left: Sort*/}
+        <div className=" flex items-center gap-4">
+        <span className="text-gray-300 text-sm">
+          Sort
+        </span>
+
+        <select
+          value={sortBy}
+          onChange={(e) => setSortBy(e.target.value)}
+          className="px-4 py-3 rounded-xl bg-[#1f1f1f] border border-gray-500 text-white focus:outline-none"
+        >
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+      </div>
+
+        {/* Right: New Project*/}
         <Link href="/admin/projects/new">
           <button className="relative group h-12 w-48 font-medium">
             {/* BACK LAYER */}

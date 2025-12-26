@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import FloatingNavControls from "@/app/components/FloatingNavControls";
 
 // SERVER CLIENT – works inside Next.js server components
 const supabase = createClient(
@@ -43,13 +44,13 @@ export default async function ProjectPage({ params }) {
                 />
                 )}
 
-                {/* DESCRIPTION (upper right, moved inward/down) */}
-                <div className="absolute top-16 right-20 text-base max-w-sm text-white drop-shadow-lg">
+                {/* DESCRIPTION (upper right) */}
+                <div className="absolute top-18 right-17 text-base max-w-sm text-white drop-shadow-lg">
                 {project.description}
                 </div>
 
-                {/* TITLE (lower left, like your cyan box) */}
-                <h1 className="absolute bottom-20 left-20 text-6xl font-bold leading-none drop-shadow-lg">
+                {/* TITLE (lower left) */}
+                <h1 className="absolute bottom-10 left-20 text-6xl font-bold leading-none drop-shadow-lg">
                 {project.title}
                 </h1>
                 </div>
@@ -57,19 +58,20 @@ export default async function ProjectPage({ params }) {
 
 
             {/* Spacer so title doesn't cover images */}
-            <div className="h-20"></div>
+            <div className="h-10"></div>
 
             {/* ---------------- IMAGE LIST SECTION ---------------- */}
-            <div className="flex flex-col gap-12 w-full max-w-[1200px] mx-auto px-6 py-12">
+            <div className="flex flex-col gap-5 w-full max-w-[1300px] mx-auto px-6 py-12">
                 {images?.map((img) => (
                 <img
                     key={img.id}
                     src={img.image_url}
                     alt=""
-                    className="w-full rounded-sm"
+                    className="w-full"
                 />
                 ))}
             </div>
+            <FloatingNavControls showBack={true} showTop={true} />
 
     </div>
   );
