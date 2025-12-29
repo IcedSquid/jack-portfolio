@@ -129,3 +129,79 @@
 h1, h2, h3 {
   margin-top: 0;
 }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+/* Smooth glow overlay for homepage CTA buttons */
+/* Base CTA setup */
+.home-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  pointer-events: none;
+
+  box-shadow: 0 0 40px rgba(0, 204, 255, 0.55);
+}
+
+.home-cta:hover::before {
+  opacity: 1;
+}
+
+.home-cta > span {
+  position: relative;
+  z-index: 1;
+}
+
+/* LEFT side (WORKS): glow from center → left */
+.home-cta.left::before {
+  background: linear-gradient(
+    to left,
+    rgba(0, 204, 255, 1),
+    rgba(0, 204, 255, 0)
+  );
+}
+
+/* RIGHT side (PLAYGROUND): glow from center → right */
+.home-cta.right::before {
+  background: linear-gradient(
+    to right,
+    rgba(0, 204, 255, 1),
+    rgba(0, 204, 255, 0)
+  );
+}
+/* Make arrows transformable + smooth */
+.arrow-left,
+.arrow-right {
+  display: inline-block;
+  transition: transform 200ms ease;
+}
+
+/* Move on hover */
+.home-cta:hover .arrow-left {
+  transform: translateX(-8px);
+}
+
+.home-cta:hover .arrow-right {
+  transform: translateX(8px);
+}
+
