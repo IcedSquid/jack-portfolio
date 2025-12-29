@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }) {
     <div className="text-white w-full">
 
       {/* ---------------- HERO SECTION ---------------- */}
-      <div className="relative w-full h-[500px] bg-gray-700 overflow-hidden">
+      <div className="relative w-full h-[450px] bg-gray-700 overflow-hidden">
 
             {/* HERO IMAGE */}
                 {project.hero_image_url && (
@@ -45,12 +45,12 @@ export default async function ProjectPage({ params }) {
                 )}
 
                 {/* DESCRIPTION (upper right) */}
-                <div className="absolute top-18 right-17 text-base max-w-sm text-white drop-shadow-lg">
+                <div className="absolute top-18 right-17 text-lg max-w-sm text-white drop-shadow-lg">
                 {project.description}
                 </div>
 
                 {/* TITLE (lower left) */}
-                <h1 className="absolute bottom-10 left-20 text-6xl font-bold leading-none drop-shadow-lg">
+                <h1 className="absolute bottom-10 left-20 text-7xl font-bold leading-none drop-shadow-lg">
                 {project.title}
                 </h1>
                 </div>
